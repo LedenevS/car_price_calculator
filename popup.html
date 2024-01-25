@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Price Calculator</title>
+        <style>
+            /* Existing styles */
+            /* ... */
+    
+            .delivery-section {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 15px;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+            .delivery-title {
+                font-size: 1.2em;
+                color: #333;
+                margin-bottom: 10px;
+            }
+            .delivery-detail {
+                margin-bottom: 5px;
+            }
+            .detail-label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Price Information</h1>
+    <div class="price-section eur">
+        <span class="price-label">Origin Price (EUR):</span>
+        <span class="price-value" id="origin_price">Loading...</span>
+    </div>
+
+    <!-- Delivery Options -->
+    <div class="delivery-section" id="optimo_delivery">
+        <div class="delivery-title">Optimo Delivery:</div>
+        <div class="delivery-detail">
+            <span class="detail-label">Belarus Price (USD):</span>
+            <span id="belarus_optimo_price">Loading...</span>
+        </div>
+        <div class="delivery-detail">
+            <span class="detail-label">Poland Price (PLN):</span>
+            <span id="poland_optimo_price">Loading...</span>
+        </div>
+        <div class="delivery-detail">
+            <span class="detail-label">Date Range:</span>
+            <span id="optimo_date_range">Loading...</span>
+        </div>
+    </div>
+
+    <div class="delivery-section" id="standart_delivery">
+        <div class="delivery-title">Standart Delivery:</div>
+        <div class="delivery-detail">
+            <span class="detail-label">Belarus Price (USD):</span>
+            <span id="belarus_standart_price">Loading...</span>
+        </div>
+        <div class="delivery-detail">
+            <span class="detail-label">Poland Price (PLN):</span>
+            <span id="poland_standart_price">Loading...</span>
+        </div>
+        <div class="delivery-detail">
+            <span class="detail-label">Date Range:</span>
+            <span id="standart_date_range">Loading...</span>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
